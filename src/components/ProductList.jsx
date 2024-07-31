@@ -6,7 +6,7 @@ const ProductList = () => {
     return (
         <div className="flex flex-col justify-center items-center p-8">
             {products.map((product) => (
-                <Link href={`/products/${product.id}`}>
+                <Link key={product.id} href={`/products/${product.id}`}>
                   <div className="text-2xl">
                     <p>{product.image} - {product.name}</p>
                   </div>
